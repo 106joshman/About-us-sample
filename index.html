@@ -35,7 +35,7 @@
         <div class="top">
             <h1>About Us</h1>
             <div class="about">
-                <p>Checkit is an online platform that allows internet shoppers access to genuine product, it also allows users to see search for product and make choices by comparing prices from different online vendors and also enjoy discounted benfifits too. prefered choice or selections can also be shared with friends and loved ones.</p>
+                <p>Checkit is an online platform that allows internet shoppers access to genuine product, it also allows users to see search for product and make choices by comparing prices from different online vendors and also enjoy discounted benefits too. Prefered choice or selections can also be shared with friends and loved ones.</p>
             </div>
         </div>
 
@@ -50,7 +50,52 @@
             <div class="objct">
                 <h3>Our Objectives</h3>
                 <div class="objv">
-                    <p>We aim to provide ease to our users when stucked in making decisions while shopping online. providing a platform where users can compare price conveniently, and get best deals available on preferred product without leaving our website.</p>
+                    <p>We aim to provide ease to our users when stucked in making decisions while shopping online. Providing a platform where users can compare price conveniently, and get best deals available on preferred product without leaving our website.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq">
+            <h5>Frequently Asked Questions (FAQ)</h5>
+            <div>
+                <button type="button" class="collapse">Do you sell phones or Tablet?</button>
+                <div class="answer">
+                    <p>NO. <a href="index.html">Checkit.com</a> has it's primary goal of providing detailed and accurate information of every product dislayed and their features. While browsing you are likely to come across links to online stores that sell products on display here. But those are external entities, Checkit has no affiliation with them. <a href="index.html">Checkit.com</a> <strong>DOES NOT</strong> sell phones or anything else and we do not endorse any particular store.</p>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" class="collapse">Can I send my phone for repairs or upgrades?</button>
+                <div class="answer">
+                    <p>No, we do not upgrade or repair phones/tablets. We merely provide information about mobile phones.</p>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" class="collapse">Do you sell the products posted on the page?</button>
+                <div class="answer">
+                    <p>No we do not directly sell products. We only provide a platform for the products prices to be checked from different vendors.</p>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" class="collapse">Do I have to input my card details?</button>
+                <div class="answer">
+                    <p>Yes, all product can be searched for usinmg either name or by it's category. Although not all categories can be accessed yet due to constant additon of cutting-edge technologies stuffed into handsets and tablets, not to mention improved software capabilities - it is nearly impossible to offer filtering by each of the latest features into distinct categories. You can also let us know about any prefered category that could be updated.</p>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" class="collapse">Do I have to input my card details?</button>
+                <div class="answer">
+                    <p>NO! Checkit does not require, nor support an payment method. We provied detail informations for every products in our catelog and various prices from different online outlet.</p>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" class="collapse">There are some terms missing from your glossary.</button>
+                <div class="answer">
+                    <p>Feel free to let us know about any mobile terms you feel could be added to our glossary. We, as well as other users like yourself who might not be familiar with the term, will thank you. You can also let us know about any glossary terms that are incorrect or could be updated. The best way to do this is by using our support email found in the <a href="#contact">Contact us</a> section below.</p>
                 </div>
             </div>
         </div>
@@ -65,7 +110,7 @@
         </div>
         <hr>
         <div class="contact">
-            <p>Contact us</p>
+            <p id="contact">Contact us</p>
             <a href="tel:"><i class="fas fa-phone-alt"></i> (222) 345 235 678 </a>
             <a href="mailto:"><i class="fas fa-envelope"></i> mail@checkit.org</a>
             <a href="http://"><i class="fas fa-map-marker-alt"></i> Crescent street, USA</a>
@@ -82,5 +127,21 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        var coll = document.getElementsByClassName("collapse");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.dsiplay === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
 </html>

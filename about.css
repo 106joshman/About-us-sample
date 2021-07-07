@@ -82,6 +82,32 @@ header{
     margin-left: 4em;
 }
 
+.faq{
+    padding: 20px 20px;
+}
+
+.faq h5{
+    padding: 10px 20px;
+}
+
+.faq a:nth-child(2){
+    text-decoration: none;
+}
+
+.answer{
+    display: none;
+    overflow: hidden;
+    padding: 0 18px;
+}
+
+button{
+    border: none;
+    text-decoration: underline;
+    background-color: transparent;
+    color: #931415;
+    font-size: 15px;
+}
+
 footer {
     display: grid;
     grid-template-columns: repeat (11, 1fr );
