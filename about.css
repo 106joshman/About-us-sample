@@ -82,6 +82,16 @@ header{
     margin-left: 4em;
 }
 
+.team{
+    padding: 2em;
+}
+
+.team p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
 .faq{
     padding: 20px 20px;
 }
